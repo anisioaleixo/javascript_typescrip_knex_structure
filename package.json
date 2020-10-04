@@ -6,6 +6,7 @@
     "author": "anisioaleixo <anisioaleixo@yahoo.com.br>",
     "license": "MIT",
     "scripts": {
+        "dev": "nodemon server.ts",
         "knex:migrate:make": "knex --knexfile knexfile.ts migrate:make",
         "knex:seed:make": "knex --knexfile knexfile.ts seed:make",
         "knex:migrate:latest": "knex --knexfile knexfile.ts migrate:latest",
