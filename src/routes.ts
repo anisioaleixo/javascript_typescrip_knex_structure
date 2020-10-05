@@ -1,6 +1,6 @@
 import express from 'express'
 
-import { UserController } from './controller/UserController';
+import { UserController } from './controllers/UserController';
 
 const userController = new UserController();
 
@@ -9,6 +9,7 @@ const routes = express.Router();
 
 routes
     //Initi da aplicação
+    /*
     .get('/', (req,res)=>{
         res.json({
             "name": "javascript_typescrip_knex_structure",
@@ -16,8 +17,9 @@ routes
             "author": "Anisio Aleixo",
         })
     })
-    //.get('/users',userController.index)
-    //.post('/users',userController.create)
+    */
+    .get('/users',userController.index)
+    .post('/users',userController.create)
     //.delete('/users/:id',userController.delete)
     //.put('/users/:id',userController.update)
 
